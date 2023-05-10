@@ -75,7 +75,7 @@ let config = {
 			  	concise: true,
 			  	requestDelay: "2000",
 			  	showFeelsLikeTemp: true,
-			  	showDailyForecast: false
+			  	showDailyForecast: false,
 
 			  	showCurrentConditions: true,
 			  	showSummary: true,
