@@ -148,12 +148,12 @@ let config = {
 						url : "https://www.lemonde.fr/international/rss_full.xml"
 					},
 					{
-						title: "BBC",
-						url : "https://www.bbc.com/mundo/temas/america_latina/index.xml"
+						title: "Science",
+						url : "https://www.science.org/rss/news_current.xml"
 					},
 					{
-						title: "Voz de America",
-						url: "https://www.vozdeamerica.com/api/zqrotektot"
+						title: "Aljazeera",
+						url: "https://www.aljazeera.com/xml/rss/all.xml"
 					}
 				],
 				showSourceTitle: true,
