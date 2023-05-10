@@ -66,45 +66,45 @@ let config = {
 			position: "lower_third"
 		},
 		{
-				module: "MMM-OpenWeatherForecast",
-				position: "top_right",
-				header: "Forecast",
-				config: {
-				  apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
-				  latitude: -13.51833,
-				  longitude: -71.978058,
-				  units: "metric",
-				  iconset: "3c",
-				  colored: true,
-				  concise: true,
-				  requestDelay: "2000",
-				  showFeelsLikeTemp: true,
+			module: "MMM-OpenWeatherForecast",
+			position: "top_right",
+			header: "Forecast",
+			config: {
+				apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
+				latitude: -13.51833,
+				longitude: -71.978058,
+			  	units: "metric",
+			  	iconset: "3c",
+			  	colored: true,
+			  	concise: true,
+			  	requestDelay: "2000",
+			  	showFeelsLikeTemp: true,
 
-				  showCurrentConditions: true,
-				  showSummary: true,
-				  showExtraCurrentConditions: true,
-				  extraCurrentConditions: {
-					highLowTemp: true,
-					precipitation: true,
-					sunrise: true,
-					sunset: true,
-					wind: true,
-					barometricPressure: false,
-					humidity: true,
-					dewPoint: false,
-					uvIndex: true,
-					visibility: false
-				  },
+			  	showCurrentConditions: true,
+			  	showSummary: true,
+			  	showExtraCurrentConditions: true,
+			  	extraCurrentConditions: {
+				highLowTemp: true,
+				precipitation: true,
+				sunrise: true,
+				sunset: true,
+				wind: true,
+				barometricPressure: false,
+				humidity: true,
+				dewPoint: false,
+				uvIndex: true,
+				visibility: false
+			  },
 
-				  forecastLayout: "table",
-				  forecastHeaderText: "",
+			  forecastLayout: "table",
+			  forecastHeaderText: "",
 
-				  hourlyForecastTableHeaderText: "By the hour",
-				  showHourlyForecast: true,
-				  showHourlyTableHeaderRow: true,
-				  hourlyForecastInterval: 1,
-				  maxHourliesToShow: 10,
-				  hourlyExtras: {
+			  hourlyForecastTableHeaderText: "By the hour",
+			  showHourlyForecast: true,
+			  showHourlyTableHeaderRow: true,
+			  hourlyForecastInterval: 2,
+			  maxHourliesToShow: 8,
+			  hourlyExtras: {
 					precipitation: true,
 					wind: true,
 					barometricPressure: false,
@@ -112,13 +112,13 @@ let config = {
 					dewPoint: false,
 					uvIndex: false,
 					visibility: false
-				  },
+			  },
 
-				  dailyForecastTableHeaderText: "Throughout the week",
-				  showDailyForecast: true,
-				  showDailyTableHeaderRow: true,
-				  maxDailiesToShow: 5,
-				  dailyExtras: {
+			  dailyForecastTableHeaderText: "Throughout the week",
+			  showDailyForecast: true,
+			  showDailyTableHeaderRow: true,
+			  maxDailiesToShow: 7,
+			  dailyExtras: {
 					precipitation: true,
 					sunrise: false,
 					sunset: false,
@@ -127,8 +127,8 @@ let config = {
 					humidity: false,
 					dewPoint: false,
 					uvIndex: false
-				  },
-				}
+			  },
+			}
 		},
 		{
 			module: "newsfeed",
