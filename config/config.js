@@ -61,7 +61,6 @@ let config = {
 				]
 			}
 		},
-		,
 		{
 			module: "MMM-OpenWeatherForecast",
 			position: "top_bar",
