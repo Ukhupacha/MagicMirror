@@ -72,8 +72,8 @@ let config = {
 				weatherProvider: "openweathermap",
 				type: "current",
 				location: "Cusco",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
+				locationID: "3941584", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				apiKey: "7807206a524040d7eff2233cf02bf7cf"
 			}
 		},
 		{
@@ -84,8 +84,8 @@ let config = {
 				weatherProvider: "openweathermap",
 				type: "forecast",
 				location: "New York",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
+				locationID: "3941584", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				apiKey: "7807206a524040d7eff2233cf02bf7cf"
 			}
 		},
 		{
