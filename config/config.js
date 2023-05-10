@@ -66,17 +66,6 @@ let config = {
 			position: "lower_third"
 		},
 		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "current",
-				location: "Cusco",
-				locationID: "3941584", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "7807206a524040d7eff2233cf02bf7cf"
-			}
-		},
-		{
 				module: "MMM-OpenWeatherForecast",
 				position: "top_right",
 				header: "Forecast",
