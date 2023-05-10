@@ -74,11 +74,10 @@ let config = {
 				latitude: -13.51833,
 				longitude: -71.978058,
 			  	units: "metric",
-			  	iconset: "3c",
+			  	iconset: "1c",
 			  	colored: true,
 			  	concise: true,
 			  	requestDelay: "2000",
-			  	language: "sp",
 			  	showFeelsLikeTemp: true,
 
 			  	showCurrentConditions: true,
@@ -113,13 +112,13 @@ let config = {
 					dewPoint: false,
 					uvIndex: false,
 					visibility: false
-			  },
+			  	},
 
-			  dailyForecastTableHeaderText: "Durante la semana",
-			  showDailyForecast: true,
-			  showDailyTableHeaderRow: true,
-			  maxDailiesToShow: 5,
-			  dailyExtras: {
+			  	dailyForecastTableHeaderText: "Durante la semana",
+			  	showDailyForecast: true,
+			  	showDailyTableHeaderRow: true,
+			  	maxDailiesToShow: 5,
+			  	dailyExtras: {
 					precipitation: true,
 					sunrise: false,
 					sunset: false,
@@ -128,7 +127,7 @@ let config = {
 					humidity: false,
 					dewPoint: false,
 					uvIndex: false
-			  },
+			  	},
 			}
 		},
 		{
