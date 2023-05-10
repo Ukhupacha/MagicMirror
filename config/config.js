@@ -109,7 +109,7 @@ let config = {
 			  	concise: true,
 			  	requestDelay: "2000",
 			  	showFeelsLikeTemp: true,
-
+			  	label_days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
 			  	showCurrentConditions: false,
 			  	showSummary: false,
 			  	showExtraCurrentConditions: false,
