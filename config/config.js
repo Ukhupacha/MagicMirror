@@ -77,17 +77,69 @@ let config = {
 			}
 		},
 		{
-			module: "weather",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "forecast",
-				maxEntries: 7,
-				location: "Cusco",
-				locationID: "3941584", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "7807206a524040d7eff2233cf02bf7cf"
-			}
+				module: "MMM-OpenWeatherForecast",
+				position: "top_right",
+				header: "Forecast",
+				config: {
+				  apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
+				  latitude: -13.51833,
+				  longitude: -71.978058,
+				  units: "metric",
+				  iconset: "3c",
+				  colored: true,
+				  concise: true,
+				  requestDelay: "2000",
+				  showFeelsLikeTemp: true,
+
+				  showCurrentConditions: true,
+				  showSummary: true,
+				  showExtraCurrentConditions: true,
+				  extraCurrentConditions: {
+					highLowTemp: true,
+					precipitation: true,
+					sunrise: true,
+					sunset: true,
+					wind: true,
+					barometricPressure: false,
+					humidity: true,
+					dewPoint: false,
+					uvIndex: true,
+					visibility: false
+				  },
+
+				  forecastLayout: "table",
+				  forecastHeaderText: "",
+
+				  hourlyForecastTableHeaderText: "By the hour",
+				  showHourlyForecast: true,
+				  showHourlyTableHeaderRow: true,
+				  hourlyForecastInterval: 1,
+				  maxHourliesToShow: 10,
+				  hourlyExtras: {
+					precipitation: true,
+					wind: true,
+					barometricPressure: false,
+					humidity: false,
+					dewPoint: false,
+					uvIndex: false,
+					visibility: false
+				  },
+
+				  dailyForecastTableHeaderText: "Throughout the week",
+				  showDailyForecast: true,
+				  showDailyTableHeaderRow: true,
+				  maxDailiesToShow: 5,
+				  dailyExtras: {
+					precipitation: true,
+					sunrise: false,
+					sunset: false,
+					wind: true,
+					barometricPressure: false,
+					humidity: false,
+					dewPoint: false,
+					uvIndex: false
+				  },
+				}
 		},
 		{
 			module: "newsfeed",
