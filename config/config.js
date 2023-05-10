@@ -63,7 +63,7 @@ let config = {
 		},
 		{
 			module: "MMM-OpenWeatherForecast",
-			position: "top_bar",
+			position: "top_center",
 			header: "Hoy",
 			config: {
 				apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
