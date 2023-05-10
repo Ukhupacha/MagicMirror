@@ -61,6 +61,39 @@ let config = {
 				]
 			}
 		},
+		,
+		{
+			module: "MMM-OpenWeatherForecast",
+			position: "top_bar",
+			header: "Hoy",
+			config: {
+				apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
+				latitude: -13.51833,
+				longitude: -71.978058,
+			  	units: "metric",
+			  	iconset: "1c",
+			  	colored: true,
+			  	concise: true,
+			  	requestDelay: "2000",
+			  	showFeelsLikeTemp: true,
+
+			  	showCurrentConditions: true,
+			  	showSummary: true,
+			  	showExtraCurrentConditions: true,
+			  	extraCurrentConditions: {
+					highLowTemp: true,
+					precipitation: true,
+					sunrise: true,
+					sunset: true,
+					wind: true,
+					barometricPressure: false,
+					humidity: true,
+					dewPoint: false,
+					uvIndex: true,
+					visibility: false
+			  	}
+			}
+		},
 		{
 			module: "MMM-OpenWeatherForecast",
 			position: "top_right",
@@ -76,9 +109,9 @@ let config = {
 			  	requestDelay: "2000",
 			  	showFeelsLikeTemp: true,
 
-			  	showCurrentConditions: true,
-			  	showSummary: true,
-			  	showExtraCurrentConditions: true,
+			  	showCurrentConditions: false,
+			  	showSummary: false,
+			  	showExtraCurrentConditions: false,
 			  	extraCurrentConditions: {
 					highLowTemp: true,
 					precipitation: true,
