@@ -68,7 +68,7 @@ let config = {
 		{
 			module: "MMM-OpenWeatherForecast",
 			position: "top_right",
-			header: "Forecast",
+			header: "Temporal",
 			config: {
 				apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
 				latitude: -13.51833,
@@ -102,8 +102,8 @@ let config = {
 			  	hourlyForecastTableHeaderText: "Por hora",
 			  	showHourlyForecast: true,
 			  	showHourlyTableHeaderRow: true,
-			  	hourlyForecastInterval: 2,
-			  	maxHourliesToShow: 6,
+			  	hourlyForecastInterval: 3,
+			  	maxHourliesToShow: 4,
 			  	hourlyExtras: {
 					precipitation: true,
 					wind: true,
