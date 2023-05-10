@@ -56,7 +56,7 @@ let config = {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/holidays/peru-holidays-484/Peru_Holidays.ics"
+						url: "webcal://www.calendarlabs.com/ical-calendar/ics/484/Peru_Holidays.ics"
 					}
 				]
 			}
