@@ -138,6 +138,18 @@ let config = {
 					{
 						title: "New York Times",
 						url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					},
+					{
+						title: "Gestión",
+						url: "https://archivo.gestion.pe/feed"
+					},
+					{
+						title:  "Le monde",
+						url : "https://www.lemonde.fr/international/rss_full.xml"
+					},
+					{
+						title: "Reuters",
+						url : "https://cdn.feedcontrol.net/8/1114-wioSIX3uu8MEj.xml"
 					}
 				],
 				showSourceTitle: true,
