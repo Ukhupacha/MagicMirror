@@ -76,6 +76,7 @@ let config = {
 			  	requestDelay: "2000",
 			  	showFeelsLikeTemp: true,
 			  	showDailyForecast: false,
+			  	showHourlyForecast: false,
 
 			  	showCurrentConditions: true,
 			  	showSummary: true,
@@ -125,11 +126,11 @@ let config = {
 					visibility: false
 			  	},
 
-			  	forecastLayout: "tiled",
+			  	forecastLayout: "table",
 			  	forecastHeaderText: "",
 
 			  	hourlyForecastTableHeaderText: "Por hora",
-			  	showHourlyForecast: false,
+			  	showHourlyForecast: true,
 			  	showHourlyTableHeaderRow: true,
 			  	hourlyForecastInterval: 3,
 			  	maxHourliesToShow: 4,
