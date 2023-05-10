@@ -62,10 +62,6 @@ let config = {
 			}
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
 			module: "MMM-OpenWeatherForecast",
 			position: "top_right",
 			header: "Temporal",
@@ -132,8 +128,10 @@ let config = {
 		},
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "lower_third",
 			config: {
+				showDescription: true,
+
 				feeds: [
 					{
 						title: "New York Times",
