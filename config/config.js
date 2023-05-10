@@ -56,7 +56,7 @@ let config = {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/484/Peru_Holidays.ics"
+						url: "https://calendar.google.com/calendar/ical/es-419.pe%23holiday%40group.v.calendar.google.com/public/basic.ics"
 					}
 				]
 			}
@@ -188,6 +188,8 @@ let config = {
 						url: "https://www.aljazeera.com/xml/rss/all.xml"
 					}
 				],
+				updateInterval: 15000,
+				animationSpeed: 5000,
 				showSourceTitle: true,
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
