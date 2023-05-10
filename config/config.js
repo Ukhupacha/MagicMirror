@@ -125,11 +125,11 @@ let config = {
 					visibility: false
 			  	},
 
-			  	forecastLayout: "table",
+			  	forecastLayout: "tiled",
 			  	forecastHeaderText: "",
 
 			  	hourlyForecastTableHeaderText: "Por hora",
-			  	showHourlyForecast: true,
+			  	showHourlyForecast: false,
 			  	showHourlyTableHeaderRow: true,
 			  	hourlyForecastInterval: 3,
 			  	maxHourliesToShow: 4,
@@ -146,7 +146,7 @@ let config = {
 			  	dailyForecastTableHeaderText: "Durante la semana",
 			  	showDailyForecast: true,
 			  	showDailyTableHeaderRow: true,
-			  	maxDailiesToShow: 5,
+			  	maxDailiesToShow: 7,
 			  	dailyExtras: {
 					precipitation: true,
 					sunrise: false,
