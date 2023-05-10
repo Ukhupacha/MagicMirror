@@ -141,7 +141,7 @@ let config = {
 					},
 					{
 						title: "Gestión",
-						url: "https://archivo.gestion.pe/feed"
+						url: "https://gestion.pe/arcio/rss"
 					},
 					{
 						title:  "Le monde",
@@ -149,7 +149,7 @@ let config = {
 					},
 					{
 						title: "Reuters",
-						url : "https://cdn.feedcontrol.net/8/1114-wioSIX3uu8MEj.xml"
+						url : "https://www.reuters.com/world/"
 					}
 				],
 				showSourceTitle: true,
