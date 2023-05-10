@@ -128,7 +128,7 @@ let config = {
 		},
 		{
 			module: "newsfeed",
-			position: "lower_third",
+			position: "bottom_left",
 			config: {
 				showDescription: true,
 
