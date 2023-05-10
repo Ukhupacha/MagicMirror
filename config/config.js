@@ -78,6 +78,7 @@ let config = {
 			  	colored: true,
 			  	concise: true,
 			  	requestDelay: "2000",
+			  	language: "es",
 			  	showFeelsLikeTemp: true,
 
 			  	showCurrentConditions: true,
