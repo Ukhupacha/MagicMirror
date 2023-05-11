@@ -201,8 +201,7 @@ let config = {
             header: "Google Tasks",
             position: "middle_center",
             config: {
-                listID: "",
-                ...
+                listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
                 // See below for Configuration Options
             }
         },
