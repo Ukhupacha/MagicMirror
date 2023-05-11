@@ -162,7 +162,7 @@ let config = {
 		},
 		{
 			module: "newsfeed",
-			position: "bottom_left",
+			position: "top_bar",
 			config: {
 				showDescription: true,
 
@@ -199,7 +199,7 @@ let config = {
 		{
         	module: 'MMM-GoogleTasks',
             header: "Google Tasks",
-            position: "middle_center",
+            position: "bottom_center",
             config: {
                 listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
                 // See below for Configuration Options
