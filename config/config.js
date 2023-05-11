@@ -196,6 +196,17 @@ let config = {
 				broadcastNewsUpdates: true
 			}
 		},
+		{
+        	module: 'MMM-GoogleTasks',
+            header: "Google Tasks",
+            position: "middle_center",
+            config: {
+                listID: "",
+                ...
+                // See below for Configuration Options
+            }
+        },
+
 	]
 };
 
