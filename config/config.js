@@ -198,7 +198,7 @@ let config = {
 		},
 		{
         	module: 'MMM-GoogleTasks',
-            header: "Google Tasks",
+            header: "Tareas a Realizar",
             position: "bottom_center",
             config: {
                 listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
