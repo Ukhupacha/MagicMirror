@@ -3,4 +3,4 @@
 	url = https://github.com/jclarke0000/MMM-OpenWeatherForecast.git
 [submodule "modules/MMM-GoogleTasks"]
 	path = modules/MMM-GoogleTasks
-	url = https://github.com/Ukhupacha/MMM-GoogleTasks.git
+	url = https://github.com/jgauth/MMM-GoogleTasks.git
