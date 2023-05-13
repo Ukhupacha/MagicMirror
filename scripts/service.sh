@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 npm install -g pm2
 pm2 startup
 echo "cd ~/Magicmirror
