@@ -205,6 +205,15 @@ let config = {
 				// See below for Configuration Options
 			}
 		},
+		{
+			module: 'MMM-Senamhi',
+			header: "Senamhi",
+			position: "bottom_left",
+			config: {
+				locationId: "0019" // cusco
+			}
+
+		},
 	]
 };
 
