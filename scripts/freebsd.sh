@@ -8,6 +8,10 @@ npm run install-mm
 npm install googleapis@105 @google-cloud/local-auth@2.1.0 --save
 cd ~/Magicmirror/modules/MMM-OpenWeatherForecast
 npm install
-cp ~/Magicmirror/modules/MMM-GoogleTasks
-npm install
 cp ~/Magicmirror/modules/credentials/* ~/Magicmirror/modules/MMM-GoogleTasks/
+cd ~/Magicmirror/modules/MMM-GoogleTasks
+npm install
+cd ~/Magicmirror/modules/MMM-Senamhi
+npm install
+cd ~/Magicmirror/modules/MMM-auto-refresh
+npm install
