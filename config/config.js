@@ -104,7 +104,7 @@ let config = {
 				latitude: -13.51833,
 				longitude: -71.978058,
 			  	units: "metric",
-			  	iconset: "1c",
+			  	iconset: "4c",
 			  	colored: true,
 			  	concise: true,
 			  	requestDelay: "2000",
