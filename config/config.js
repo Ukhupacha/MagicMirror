@@ -214,6 +214,12 @@ let config = {
 			}
 
 		},
+		{
+			module: 'MMM-auto-refresh',
+			config: {
+				refreshInterval: 180000 // 30 min
+			}
+		}
 	]
 };
 
