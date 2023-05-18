@@ -199,7 +199,7 @@ let config = {
 		{
 			module: 'MMM-GoogleTasks',
 			header: "Tareas a Realizar",
-			position: "bottom_center",
+			position: "top_center",
 			config: {
 				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
 				// See below for Configuration Options
@@ -208,7 +208,7 @@ let config = {
 		{
 			module: 'MMM-Senamhi',
 			header: "Senamhi",
-			position: "bottom_left",
+			position: "bottom_center",
 			config: {
 				locationId: "0019" // cusco
 			}
@@ -218,6 +218,20 @@ let config = {
 			module: 'MMM-auto-refresh',
 			config: {
 				refreshInterval: 180000 // 30 min
+			}
+		},
+		{
+			module: 'MMM-Carousel',
+			position: 'bottom_bar',
+			config: {
+				transitionInterval: 10000,
+				ignoreModules: ['clock', 'newsfeed', 'calendar'],
+				mode: 'slides',
+				slides : [
+					['MMM-OpenWeatherForecast', 'MMM-Senamhi'],
+					['MMM-GoogleTasks']
+				]
+
 			}
 		}
 	]

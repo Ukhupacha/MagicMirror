@@ -31,13 +31,9 @@
 }
 
 body {
-	zoom: 140%;
+  zoom: 140%;
 }
 
 .newsfeed {
   height: 80px;
-}
-
-.MMM-GoogleTasks {
-  height: 150px;
 }
