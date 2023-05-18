@@ -201,7 +201,8 @@ let config = {
 			header: "Labores AGP",
 			position: "top_center",
 			config: {
-				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
+				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow",
+				showCompleted: true
 				// See below for Configuration Options
 			}
 		},
@@ -210,7 +211,8 @@ let config = {
 			header: "Labores ISO",
 			position: "top_right",
 			config: {
-				listID: "dm9majQ1UExqT3RpcnRXTA"
+				listID: "dm9majQ1UExqT3RpcnRXTA",
+				showCompleted: true
 			}
 		},
 		{
