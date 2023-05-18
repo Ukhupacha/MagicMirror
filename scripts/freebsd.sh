@@ -15,3 +15,5 @@ cd ~/Magicmirror/modules/MMM-Senamhi
 npm install
 cd ~/Magicmirror/modules/MMM-auto-refresh
 npm install
+cd ~/Magicmirror/modules/MMM-Carousel
+npm install
