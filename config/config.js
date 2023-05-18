@@ -198,11 +198,19 @@ let config = {
 		},
 		{
 			module: 'MMM-GoogleTasks',
-			header: "Tareas a Realizar",
+			header: "Labores AGP",
 			position: "top_center",
 			config: {
 				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow"
 				// See below for Configuration Options
+			}
+		},
+		{
+			module: 'MMM-GoogleTasks',
+			header: "Labores ISO",
+			position: "top_right",
+			config: {
+				listID: "dm9majQ1UExqT3RpcnRXTA"
 			}
 		},
 		{
