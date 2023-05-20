@@ -235,13 +235,21 @@ let config = {
 			position: 'bottom_bar',
 			config: {
 				transitionInterval: 10000,
-				ignoreModules: ['clock', 'newsfeed', 'calendar'],
+				ignoreModules: ['clock', 'newsfeed', 'calendar', 'MMM-Zkteco'],
 				mode: 'slides',
 				slides : [
 					['MMM-OpenWeatherForecast', 'MMM-Senamhi'],
 					['MMM-GoogleTasks']
 				]
 
+			}
+		},
+		{
+			module: 'MMM-Zkteco',
+			header: 'Attendance',
+			position: 'bottom_left',
+			config: {
+				ip: 'zkteco.intranet'
 			}
 		}
 	]
