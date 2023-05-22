@@ -53,6 +53,7 @@ let config = {
 			header: "Días festivos",
 			position: "top_left",
 			config: {
+				maximumEntries: 15,
 				calendars: [
 					{
 						symbol: "calendar-check",
