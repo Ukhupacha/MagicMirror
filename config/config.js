@@ -200,7 +200,7 @@ let config = {
 		{
 			module: 'MMM-GoogleTasks',
 			header: "Labores AGP",
-			position: "top_right",
+			position: "bottom_center",
 			config: {
 				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow",
 				showCompleted: true
@@ -210,7 +210,7 @@ let config = {
 		{
 			module: 'MMM-GoogleTasks',
 			header: "Labores ISO",
-			position: "bottom_right",
+			position: "top_center",
 			config: {
 				listID: "dm9majQ1UExqT3RpcnRXTA",
 				showCompleted: true
@@ -235,7 +235,7 @@ let config = {
 			module: 'MMM-Carousel',
 			position: 'bottom_bar',
 			config: {
-				transitionInterval: 10000,
+				transitionInterval: 20000,
 				ignoreModules: ['clock', 'newsfeed', 'calendar'],
 				mode: 'slides',
 				slides : [
@@ -248,7 +248,7 @@ let config = {
 		{
 			module: 'MMM-Zkteco',
 			header: 'Asistencias Zkteco',
-			position: 'top_center',
+			position: 'top_right',
 			config: {
 				ip: 'zkteco.intranet'
 			}
