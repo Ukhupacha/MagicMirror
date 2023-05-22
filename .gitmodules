@@ -13,3 +13,6 @@
 [submodule "modules/MMM-Carousel"]
 	path = modules/MMM-Carousel
 	url = https://github.com/shbatm/MMM-Carousel.git
+[submodule "modules/MMM-Zkteco"]
+	path = modules/MMM-Zkteco
+	url = https://github.com/Ukhupacha/MMM-Zkteco.git
