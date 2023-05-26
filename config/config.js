@@ -200,19 +200,37 @@ let config = {
 		{
 			module: 'MMM-GoogleTasks',
 			header: "Labores AGP",
-			position: "bottom_center",
+			position: "top_center",
 			config: {
-				listID: "MTY0MTYzNTk4MjMzMzY2NjA4NDE6MDow",
+				listID: "MDI3MTA2NDQ1Mzg5ODcxNzE2MjA6MDow",
 				showCompleted: true
 				// See below for Configuration Options
 			}
 		},
 		{
 			module: 'MMM-GoogleTasks',
-			header: "Labores ISO",
-			position: "top_center",
+			header: "Labores Damaris",
+			position: "top_right",
 			config: {
-				listID: "dm9majQ1UExqT3RpcnRXTA",
+				listID: "R1BVVm5uak4tekFQSzJHUg",
+				showCompleted: true
+			}
+		},
+		{
+			module: 'MMM-GoogleTasks',
+			header: "Labores Operarios",
+			position: "bottom_center",
+			config: {
+				listID: "d25EUHN2bUN6Ulh0YzhGYg",
+				showCompleted: true
+			}
+		},
+		{
+			module: 'MMM-GoogleTasks',
+			header: "Labores Escogedoras",
+			position: "bottom_right",
+			config: {
+				listID: "QWZGamY1RTV4ZUVxTUlRQw",
 				showCompleted: true
 			}
 		},
@@ -228,7 +246,7 @@ let config = {
 		{
 			module: 'MMM-auto-refresh',
 			config: {
-				refreshInterval: 180000 // 30 min
+				refreshInterval: 360000 // 30 min
 			}
 		},
 		{
@@ -240,7 +258,8 @@ let config = {
 				mode: 'slides',
 				slides : [
 					['MMM-OpenWeatherForecast', 'MMM-Senamhi'],
-					['MMM-GoogleTasks', 'MMM-Zkteco']
+					['MMM-GoogleTasks'],
+					['MMM-Zkteco']
 				]
 
 			}
@@ -248,7 +267,7 @@ let config = {
 		{
 			module: 'MMM-Zkteco',
 			header: 'Asistencias Zkteco',
-			position: 'top_right',
+			position: 'top_center',
 			config: {
 				ip: 'zkteco.intranet'
 			}
