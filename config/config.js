@@ -244,12 +244,6 @@ let config = {
 
 		},
 		{
-			module: 'MMM-auto-refresh',
-			config: {
-				refreshInterval: 360000 // 30 min
-			}
-		},
-		{
 			module: 'MMM-Carousel',
 			position: 'bottom_bar',
 			config: {
