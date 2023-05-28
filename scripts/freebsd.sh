@@ -1,5 +1,5 @@
 #!/bin/sh
-pkg install -y vim node npm bash
+pkg install -y vim node npm bash python
 service sshd enable
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 service sshd start
