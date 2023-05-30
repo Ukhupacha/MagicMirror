@@ -169,7 +169,8 @@ let config = {
 			position: "top_center",
 			config: {
 				listID: "MDI3MTA2NDQ1Mzg5ODcxNzE2MjA6MDow",
-				showCompleted: true
+				showCompleted: true,
+				updateInterval: 60000
 				// See below for Configuration Options
 			}
 		},
@@ -179,7 +180,8 @@ let config = {
 			position: "top_right",
 			config: {
 				listID: "R1BVVm5uak4tekFQSzJHUg",
-				showCompleted: true
+				showCompleted: true,
+				updateInterval: 60000
 			}
 		},
 		{
@@ -188,7 +190,8 @@ let config = {
 			position: "bottom_center",
 			config: {
 				listID: "d25EUHN2bUN6Ulh0YzhGYg",
-				showCompleted: true
+				showCompleted: true,
+				updateInterval: 60000
 			}
 		},
 		{
@@ -197,7 +200,8 @@ let config = {
 			position: "bottom_right",
 			config: {
 				listID: "QWZGamY1RTV4ZUVxTUlRQw",
-				showCompleted: true
+				showCompleted: true,
+				updateInterval: 60000
 			}
 		},
 		{
@@ -229,7 +233,8 @@ let config = {
 			header: 'Asistencias Zkteco',
 			position: 'top_center',
 			config: {
-				ip: 'zkteco.intranet'
+				ip: 'zkteco.intranet',
+				updateInterval: 60000
 			}
 		}
 	]
