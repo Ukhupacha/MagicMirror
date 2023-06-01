@@ -170,7 +170,6 @@ let config = {
 			config: {
 				listID: "MDI3MTA2NDQ1Mzg5ODcxNzE2MjA6MDow",
 				showCompleted: true,
-				updateInterval: 60000
 				// See below for Configuration Options
 			}
 		},
@@ -181,7 +180,6 @@ let config = {
 			config: {
 				listID: "R1BVVm5uak4tekFQSzJHUg",
 				showCompleted: true,
-				updateInterval: 60000
 			}
 		},
 		{
@@ -191,7 +189,6 @@ let config = {
 			config: {
 				listID: "d25EUHN2bUN6Ulh0YzhGYg",
 				showCompleted: true,
-				updateInterval: 60000
 			}
 		},
 		{
@@ -201,7 +198,6 @@ let config = {
 			config: {
 				listID: "QWZGamY1RTV4ZUVxTUlRQw",
 				showCompleted: true,
-				updateInterval: 60000
 			}
 		},
 		{
@@ -234,7 +230,6 @@ let config = {
 			position: 'top_center',
 			config: {
 				ip: 'zkteco.intranet',
-				updateInterval: 60000
 			}
 		}
 	]
