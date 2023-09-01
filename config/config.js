@@ -50,14 +50,22 @@ let config = {
 		},
 		{
 			module: "calendar",
-			header: "Días festivos",
+			header: "Tareas AGP",
 			position: "top_left",
 			config: {
-				maximumEntries: 15,
+				maximumEntries: 20,
 				calendars: [
 					{
-						symbol: "calendar-check",
+						symbol: "star",
 						url: "https://calendar.google.com/calendar/ical/es-419.pe%23holiday%40group.v.calendar.google.com/public/basic.ics"
+					},
+					{
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/ical/agpinka.tareas%40gmail.com/private-e0ded0cad1dcb857906b64470558633e/basic.ics"
+					},
+					{
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/ical/gerencia%40agpinka.com/private-4d5005e4520b28d8579bd2fc09a72633/basic.ics"
 					}
 				]
 			}
@@ -164,43 +172,6 @@ let config = {
 			}
 		},
 		{
-			module: 'MMM-GoogleTasks',
-			header: "Labores AGP",
-			position: "top_center",
-			config: {
-				listID: "MDI3MTA2NDQ1Mzg5ODcxNzE2MjA6MDow",
-				showCompleted: true,
-				// See below for Configuration Options
-			}
-		},
-		{
-			module: 'MMM-GoogleTasks',
-			header: "Labores Damaris",
-			position: "top_right",
-			config: {
-				listID: "R1BVVm5uak4tekFQSzJHUg",
-				showCompleted: true,
-			}
-		},
-		{
-			module: 'MMM-GoogleTasks',
-			header: "Labores Operarios",
-			position: "bottom_center",
-			config: {
-				listID: "d25EUHN2bUN6Ulh0YzhGYg",
-				showCompleted: true,
-			}
-		},
-		{
-			module: 'MMM-GoogleTasks',
-			header: "Labores Escogedoras",
-			position: "bottom_right",
-			config: {
-				listID: "QWZGamY1RTV4ZUVxTUlRQw",
-				showCompleted: true,
-			}
-		},
-		{
 			module: 'MMM-Senamhi',
 			header: "Senamhi",
 			position: "top_center",
@@ -218,7 +189,6 @@ let config = {
 				mode: 'slides',
 				slides : [
 					['MMM-OpenWeatherForecast', 'MMM-Senamhi'],
-					['MMM-GoogleTasks'],
 					['MMM-Zkteco']
 				]
 
