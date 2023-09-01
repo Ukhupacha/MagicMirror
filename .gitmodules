@@ -13,3 +13,6 @@
 [submodule "modules/MMM-Zkteco"]
 	path = modules/MMM-Zkteco
 	url = https://github.com/Ukhupacha/MMM-Zkteco.git
+[submodule "modules/MMM-ImagesPhotos"]
+	path = modules/MMM-ImagesPhotos
+	url = https://github.com/roramirez/MMM-ImagesPhotos.git

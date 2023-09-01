@@ -181,6 +181,14 @@ let config = {
 
 		},
 		{
+			module: 'MMM-Zkteco',
+			header: 'Asistencias Zkteco',
+			position: 'top_center',
+			config: {
+				ip: 'zkteco.intranet',
+			}
+		},
+		{
 			module: 'MMM-Carousel',
 			position: 'bottom_bar',
 			config: {
@@ -192,14 +200,6 @@ let config = {
 					['MMM-Zkteco']
 				]
 
-			}
-		},
-		{
-			module: 'MMM-Zkteco',
-			header: 'Asistencias Zkteco',
-			position: 'top_center',
-			config: {
-				ip: 'zkteco.intranet',
 			}
 		}
 	]
