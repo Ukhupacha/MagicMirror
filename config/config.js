@@ -17,7 +17,7 @@ let config = {
 							// - another specific IPv4/6 to listen on a specific interface
 							// - "0.0.0.0", "::" to listen on any interface
 							// Default, when address config is left out or empty, is "localhost"
-	port: 8080,
+	port: 80,
 	basePath: "/",			// The URL path where MagicMirror² is hosted. If you are using a Reverse proxy
 					  		// you must set the sub path here. basePath must end with a /
 	ipWhitelist: [],	// Set [] to allow all IP addresses
@@ -50,60 +50,158 @@ let config = {
 		},
 		{
 			module: "calendar",
-			header: "Días festivos",
+			header: "Tareas AGP",
 			position: "top_left",
 			config: {
+				maximumEntries: 20,
 				calendars: [
 					{
+						symbol: "star",
+						url: "https://calendar.google.com/calendar/ical/es-419.pe%23holiday%40group.v.calendar.google.com/public/basic.ics"
+					},
+					{
 						symbol: "calendar-check",
-						url: "webcal:www.calendarlabs.com/ical-calendar/holidays/peru-holidays-484/Peru_Holidays.ics"
+						url: "https://calendar.google.com/calendar/ical/agpinka.tareas%40gmail.com/private-e0ded0cad1dcb857906b64470558633e/basic.ics"
+					},
+					{
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/ical/gerencia%40agpinka.com/private-4d5005e4520b28d8579bd2fc09a72633/basic.ics"
 					}
 				]
 			}
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
-			module: "weather",
+			module: "MMM-OpenWeatherForecast",
 			position: "top_right",
+			header: "Hoy",
 			config: {
-				weatherProvider: "openweathermap",
-				type: "current",
-				location: "Cusco",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
-			}
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "forecast",
-				location: "New York",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "YOUR_OPENWEATHER_API_KEY"
+				apikey: "7807206a524040d7eff2233cf02bf7cf", //SUPER SECRET
+				latitude: -13.51833,
+				longitude: -71.978058,
+			  	units: "metric",
+			  	iconset: "4c",
+			  	colored: true,
+			  	concise: true,
+			  	requestDelay: "2000",
+			  	showFeelsLikeTemp: true,
+			  	label_days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+			  	showCurrentConditions: false,
+			  	showSummary: false,
+			  	showExtraCurrentConditions: false,
+			  	extraCurrentConditions: {
+					highLowTemp: true,
+					precipitation: true,
+					sunrise: true,
+					sunset: true,
+					wind: true,
+					barometricPressure: false,
+					humidity: true,
+					dewPoint: false,
+					uvIndex: true,
+					visibility: false
+			  	},
+
+			  	forecastLayout: "table",
+			  	forecastHeaderText: "",
+
+			  	hourlyForecastTableHeaderText: "Por hora",
+			  	showHourlyForecast: true,
+			  	showHourlyTableHeaderRow: true,
+			  	hourlyForecastInterval: 3,
+			  	maxHourliesToShow: 4,
+			  	hourlyExtras: {
+					precipitation: true,
+					wind: true,
+					barometricPressure: false,
+					humidity: false,
+					dewPoint: false,
+					uvIndex: false,
+					visibility: false
+			  	},
+
+			  	dailyForecastTableHeaderText: "Durante la semana",
+			  	showDailyForecast: true,
+			  	showDailyTableHeaderRow: true,
+			  	maxDailiesToShow: 7,
+			  	dailyExtras: {
+					precipitation: true,
+					sunrise: false,
+					sunset: false,
+					wind: true,
+					barometricPressure: false,
+					humidity: false,
+					dewPoint: false,
+					uvIndex: false
+			  	},
 			}
 		},
 		{
 			module: "newsfeed",
-			position: "bottom_bar",
+			position: "top_bar",
 			config: {
+				showDescription: true,
+
 				feeds: [
 					{
 						title: "New York Times",
 						url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+					},
+					{
+						title: "Gestión",
+						url: "https://gestion.pe/arcio/rss"
+					},
+					{
+						title:  "Le monde",
+						url : "https://www.lemonde.fr/international/rss_full.xml"
+					},
+					{
+						title: "Science",
+						url : "https://www.science.org/rss/news_current.xml"
+					},
+					{
+						title: "Aljazeera",
+						url: "https://www.aljazeera.com/xml/rss/all.xml"
 					}
 				],
+				updateInterval: 15000,
+				animationSpeed: 5000,
 				showSourceTitle: true,
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
 		},
+		{
+			module: 'MMM-Senamhi',
+			header: "Senamhi",
+			position: "top_center",
+			config: {
+				locationId: "0019" // cusco
+			}
+
+		},
+		{
+			module: 'MMM-Zkteco',
+			header: 'Asistencias Zkteco',
+			position: 'top_center',
+			config: {
+				ip: 'zkteco.intranet',
+			}
+		},
+		{
+			module: 'MMM-Carousel',
+			position: 'bottom_bar',
+			config: {
+				transitionInterval: 20000,
+				ignoreModules: ['clock', 'newsfeed', 'calendar'],
+				mode: 'slides',
+				slides : [
+					['MMM-OpenWeatherForecast', 'MMM-Senamhi'],
+					['MMM-Zkteco']
+				]
+
+			}
+		}
 	]
 };
 
