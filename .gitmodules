@@ -16,3 +16,6 @@
 [submodule "modules/MMM-ImagesPhotos"]
 	path = modules/MMM-ImagesPhotos
 	url = https://github.com/roramirez/MMM-ImagesPhotos.git
+[submodule "modules/MMM-MplayerRadio"]
+	path = modules/MMM-MplayerRadio
+	url = https://github.com/Tom-Hirschberger/MMM-MplayerRadio.git
